@@ -1,6 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/', function(req, res) {
+  res.render('index', { title: 'Downtown Donuts' });
+});
+
+module.exports = router;
+
 /* GET home page. */
 router.get('/', function(req, res, next){
   try {
