@@ -268,3 +268,9 @@ body {
 .logo:hover {
   color: #F7F7F7;
 }
+
+.logo-img {
+  width: 360px;
+  margin: 0 auto 20px;
+  display: block;
+}
