@@ -9,6 +9,10 @@ router.get('/menu', function(req, res) {
   res.render('menu', { title: 'Menu' });
 });
 
+router.get('/about', function(req, res) {
+  res.render('about', { title: 'About Us' });
+});
+
 module.exports = router;
 
 /* GET home page. */
