@@ -212,4 +212,44 @@ body {
   color: #F7F7F7;
   text-align: center;
   padding: 25px;
+}.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+}
+
+.error-message {
+  color: darkred;
+  font-weight: bold;
+}
+
+.comment-card {
+  background-color: white;
+  border-left: 4px solid #F7C64A;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.load-more {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  background-color: #10291D;
+  color: #F7F7F7;
+  border-radius: 20px;
+  cursor: pointer;
 }

@@ -13,6 +13,10 @@ router.get('/about', function(req, res) {
   res.render('about', { title: 'About Us' });
 });
 
+router.get('/comments', function(req, res) {
+  res.render('comments', { title: 'Customer Comments' });
+});
+
 module.exports = router;
 
 /* GET home page. */

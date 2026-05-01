@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  section.page-section
+    h1 Customer Comments
+    p Share your experience with Downtown Donuts.
+
+    form#commentForm.comment-form
+      label(for="name") Name
+      input#name(type="text", name="name", maxlength="40")
+
+      label(for="message") Comment
+      textarea#message(name="message", maxlength="500")
+
+      button.button(type="submit") Submit Comment
+
+    p#error.error-message
+
+    h2 Recent Comments
+    div#comments.comment-list
+
+    button#loadMore.load-more(type="button") Load More
+
+  script(src="/javascripts/comments.js")
