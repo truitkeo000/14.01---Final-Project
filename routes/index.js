@@ -5,6 +5,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Downtown Donuts' });
 });
 
+router.get('/menu', function(req, res) {
+  res.render('menu', { title: 'Menu' });
+});
+
 module.exports = router;
 
 /* GET home page. */
