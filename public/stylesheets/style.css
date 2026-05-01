@@ -253,3 +253,18 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo:hover {
+  color: #F7F7F7;
+}
