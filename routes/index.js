@@ -1,18 +1,23 @@
+// Handles the routes for the main website pages
 var express = require('express');
 var router = express.Router();
 
+// Renders the homepage
 router.get('/', function(req, res) {
   res.render('index', { title: 'Downtown Donuts' });
 });
 
+// Renders the menu page
 router.get('/menu', function(req, res) {
   res.render('menu', { title: 'Menu' });
 });
 
+// Renders the about page
 router.get('/about', function(req, res) {
   res.render('about', { title: 'About Us' });
 });
 
+// Renders the customer comments page
 router.get('/comments', function(req, res) {
   res.render('comments', { title: 'Customer Comments' });
 });

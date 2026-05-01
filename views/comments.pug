@@ -1,10 +1,12 @@
 extends layout
 
+// Customer comments page with form and comment display area
 block content
   section.page-section
     h1 Customer Comments
     p Share your experience with Downtown Donuts.
 
+    // Form where customers submit a name and comment
     form#commentForm.comment-form
       label(for="name") Name
       input#name(type="text", name="name", maxlength="40")
@@ -17,6 +19,7 @@ block content
     p#error.error-message
 
     h2 Recent Comments
+    // Comments are loaded here by comments.js
     div#comments.comment-list
 
     button#loadMore.load-more(type="button") Load More

@@ -1,10 +1,16 @@
+/* Main styling for the Downtown Donuts website.
+   The colors follow the provided brand guide:
+   dark green for main sections, saffron for accents,
+   and seasalt/light backgrounds for readability. */
+ 
+/* General page styles */
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   background-color: #F7F7F7;
   color: #000000;
 }
-
+/* Navigation bar */
 .navbar {
   background-color: #10291D;
   display: flex;
@@ -36,7 +42,7 @@ body {
 .nav-links a:hover {
   color: #F7C64A;
 }
-
+/* Homepage and menu hero sections */
 .hero,
 .menu-hero {
   background-color: #10291D;
@@ -63,7 +69,7 @@ body {
   margin: 0 auto 24px;
   font-size: 18px;
 }
-
+/* Buttons and ordering links */
 .button,
 .order-button {
   border: 2px solid #F7C64A;
@@ -87,7 +93,7 @@ body {
   background-color: #F7C64A;
   color: #10291D;
 }
-
+/* Homepage feature cards */
 .card-section {
   display: flex;
   gap: 25px;
@@ -104,7 +110,7 @@ body {
   width: 260px;
   text-align: center;
 }
-
+/* Menu page layout */
 .menu-container,
 .page-section {
   max-width: 1000px;
@@ -133,7 +139,7 @@ body {
   text-align: center;
   color: #555;
 }
-
+/* Donut menu cards */
 .donut-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -166,7 +172,7 @@ body {
   text-align: center;
   margin: 30px 0;
 }
-
+/* Coffee drink table */
 .drink-table {
   background-color: white;
   border-radius: 10px;
@@ -218,7 +224,7 @@ body {
   gap: 12px;
   max-width: 600px;
 }
-
+/* Comment form and comment cards */
 .comment-form input,
 .comment-form textarea {
   padding: 10px;
