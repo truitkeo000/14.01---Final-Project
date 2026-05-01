@@ -2,6 +2,25 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@400&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
-    block content
+    header.site-header
+      nav.navbar
+        a.logo(href="/") Downtown Donuts
+        ul.nav-links
+          li
+            a(href="/") Home
+          li
+            a(href="/menu") Menu
+          li
+            a(href="/about") About
+          li
+            a(href="/comments") Comments
+
+    main
+      block content
+
+    footer.footer
+      p Downtown Donuts | Family-Owned Since 1992

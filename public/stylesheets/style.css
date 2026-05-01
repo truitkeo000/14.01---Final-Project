@@ -1,8 +1,215 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #F7F7F7;
+  color: #000000;
 }
 
-a {
-  color: #00B7FF;
+.navbar {
+  background-color: #10291D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+.logo {
+  font-family: 'Italianno', cursive;
+  font-size: 36px;
+  color: #F7C64A;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #F7C64A;
+}
+
+.hero,
+.menu-hero {
+  background-color: #10291D;
+  color: #F7F7F7;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.eyebrow {
+  color: #F7C64A;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.menu-hero h1 {
+  font-size: 44px;
+  margin: 10px 0;
+}
+
+.hero p,
+.menu-hero p {
+  max-width: 650px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+}
+
+.button,
+.order-button {
+  border: 2px solid #F7C64A;
+  color: #F7C64A;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 6px;
+}
+
+.button:hover,
+.order-button:hover {
+  background-color: #F7C64A;
+  color: #10291D;
+}
+
+.button.secondary {
+  background-color: #F7C64A;
+  color: #10291D;
+}
+
+.card-section {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-top: 4px solid #F7C64A;
+  border-radius: 8px;
+  padding: 25px;
+  width: 260px;
+  text-align: center;
+}
+
+.menu-container,
+.page-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+.menu-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+  border-left: 5px solid #F7C64A;
+  padding: 20px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 32px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #555;
+}
+
+.donut-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.donut-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  border-top: 4px solid #F7C64A;
+  text-align: center;
+}
+
+.donut-icon {
+  font-size: 30px;
+}
+
+.price {
+  font-weight: bold;
+  color: #10291D;
+}
+
+.special-box {
+  background-color: #10291D;
+  color: #F7F7F7;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.drink-table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.drink-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.drink-header {
+  background-color: #10291D;
+  color: #F7C64A;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #999;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+
+.desc {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer {
+  background-color: #10291D;
+  color: #F7F7F7;
+  text-align: center;
+  padding: 25px;
 }
